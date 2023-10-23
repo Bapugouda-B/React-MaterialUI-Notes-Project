@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Typography } from "@material-ui/core";
 
 const CreateNotes = () => {
   return (
     <div>
-      <h1>Create Notes</h1>
+      <Typography variant="h6" component="h2" gutterBottom color="textSecondary">
+        Create a New Note
+      </Typography>
     </div>
-  )
-}
+  );
+};
 
-export default CreateNotes
+export default CreateNotes;
