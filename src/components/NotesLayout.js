@@ -13,24 +13,31 @@ import { useLocation, useNavigate } from "react-router";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles({
-  page: {
-    backgroundColor: "#f9f9f9",
-    width: "100%",
-  },
-  drawer: {
-    width: drawerWidth,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  root: {
-    display: "flex",
-  },
-  active: {
-    background: "#f4f4f4",
-  },
-});
+const useStyles = makeStyles((theme)=>{
+    return {
+        page: {
+            backgroundColor: "#f9f9f9",
+            width: "100%",
+            padding: theme.spacing(3)
+          },
+          drawer: {
+            width: drawerWidth,
+          },
+          drawerPaper: {
+            width: drawerWidth,
+          },
+          root: {
+            display: "flex",
+          },
+          active: {
+            background: "#f4f4f4",
+          },
+          title:{
+            padding: theme.spacing(2)
+          }
+        }
+    });
+  
 
 const NotesLayout = ({ children }) => {
   const navigate = useNavigate();
@@ -61,7 +68,7 @@ const NotesLayout = ({ children }) => {
         }}
       >
         <div>
-          <Typography variant="h5"></Typography>
+          <Typography variant="h4" className={classes.title}>Bapu's Note</Typography>
         </div>
         <List>
           {drawerItems.map((item) => (
