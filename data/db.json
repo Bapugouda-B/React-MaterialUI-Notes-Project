@@ -1,58 +1,10 @@
 {
   "notes": [
     {
-      "title": "Appaji Birthday",
-      "description": "lorem ipsum dolor sit",
+      "title": "Birthday",
+      "description": "Its my Brother Birthday",
       "category": "reminders",
       "id": 1
-    },
-    {
-      "title": "Complete my DevOps Training",
-      "description": "lorem ipsum dolor sit",
-      "category": "work",
-      "id": 3
-    },
-    {
-      "title": "AWS Instance Management",
-      "description": "lorem ipsum dolor sit",
-      "category": "todos",
-      "id": 3
-    },
-    {
-      "title": "Danush Birthday",
-      "description": "Its my brother birthday",
-      "category": "reminders",
-      "id": 4
-    },
-    {
-      "title": "Hello",
-      "description": "Brother",
-      "category": "work",
-      "id": 5
-    },
-    {
-      "title": "hello",
-      "description": "hello",
-      "category": "todos",
-      "id": 6
-    },
-    {
-      "title": "geee",
-      "description": "ggfff",
-      "category": "reminders",
-      "id": 7
-    },
-    {
-      "title": "heeloo",
-      "description": "hello",
-      "category": "money",
-      "id": 8
-    },
-    {
-      "title": "heeloo",
-      "description": "hello",
-      "category": "reminders",
-      "id": 9
     }
   ]
 }
