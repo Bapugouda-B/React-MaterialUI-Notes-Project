@@ -1,5 +1,11 @@
 import React from "react";
-import { Card, CardContent, CardHeader, IconButton, Typography } from "@material-ui/core";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Typography,
+} from "@material-ui/core";
 import { DeleteOutline } from "@material-ui/icons";
 
 const NoteCard = ({ note, handleDelete }) => {
@@ -8,7 +14,7 @@ const NoteCard = ({ note, handleDelete }) => {
       <Card elevation={4}>
         <CardHeader
           action={
-            <IconButton onClick={()=>handleDelete(note.id)}>
+            <IconButton onClick={() => handleDelete(note.id)}>
               <DeleteOutline />
             </IconButton>
           }
@@ -16,9 +22,9 @@ const NoteCard = ({ note, handleDelete }) => {
           subheader={note.category}
         />
         <CardContent>
-            <Typography variant="body2" color="textPrimary">
+          <Typography variant="body2" color="textPrimary">
             {note.description}
-            </Typography>
+          </Typography>
         </CardContent>
       </Card>
     </div>
