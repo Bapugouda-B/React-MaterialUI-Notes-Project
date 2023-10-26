@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import {
   Typography,
   Button,
@@ -22,8 +23,8 @@ const useStyles = makeStyles({
 });
 
 const CreateNotes = () => {
+  const navigate = useNavigate();
   const classes = useStyles();
-
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [titleError, setTitleError] = useState(false);
@@ -43,7 +44,12 @@ const CreateNotes = () => {
       setDescriptionError(true);
     }
     if (title && description) {
-      console.log(title, description, category);
+      // Post request once the form is submitted
+      fetch(" http://localhost:8000/notes", {
+        method: "POST",
+        headers:{"Content-type":"application/json"},
+        body: JSON.stringify({title, description, category})
+      }).then(navigate('/'))
     }
   };
 

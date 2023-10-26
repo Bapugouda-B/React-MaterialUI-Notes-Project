@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "title": "Appaji Birthday",
+      "description": "lorem ipsum dolor sit",
+      "category": "reminders",
+      "id": 1
+    },
+    {
+      "title": "Complete my DevOps Training",
+      "description": "lorem ipsum dolor sit",
+      "category": "work",
+      "id": 3
+    },
+    {
+      "title": "AWS Instance Management",
+      "description": "lorem ipsum dolor sit",
+      "category": "todos",
+      "id": 3
+    }
+  ]
+}
