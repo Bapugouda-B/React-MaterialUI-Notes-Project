@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     test:{
         border: (note) =>{
             if(note.category === "work"){
-                return "1.5px solid red"
+                return "2px solid red"
             }
         } 
     }

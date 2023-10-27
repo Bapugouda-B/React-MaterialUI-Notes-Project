@@ -1,16 +1,40 @@
 {
   "notes": [
     {
-      "title": "Shashiraj Mendon",
-      "description": "Have Birthday on January 5th 1996",
+      "title": "Hello",
+      "description": "Its my Brother birthday, so have give him wonderful gift",
+      "category": "reminders",
+      "id": 1
+    },
+    {
+      "title": "RajjDanush ",
+      "description": "Its My Birthday",
       "category": "reminders",
       "id": 2
     },
     {
-      "title": "Abhi",
-      "description": "Hadsu Hadargitti Randi , chinal chooth lee nin tull hadaaa",
+      "title": "DevOps",
+      "description": "Have to complete DevOps Assingments today",
       "category": "work",
       "id": 3
+    },
+    {
+      "title": "AWS Day",
+      "description": "Have create AWS Instances for my WEB projects",
+      "category": "todos",
+      "id": 4
+    },
+    {
+      "title": "Treking",
+      "description": "Treking with friedns on sunday and saturday",
+      "category": "reminders",
+      "id": 5
+    },
+    {
+      "title": "Trading Day",
+      "description": "Researching and selection good stocks and buy and hold for several months. Minimum profit target will be 1cr.",
+      "category": "work",
+      "id": 6
     }
   ]
 }
