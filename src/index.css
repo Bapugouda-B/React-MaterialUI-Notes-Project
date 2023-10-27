@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* css for masonry grid  */
+
+.my-masonry-grid {
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+.my-masonry-grid-column {
+  padding-left: 30px; 
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid-column > div { 
+  margin-bottom: 30px;
+}

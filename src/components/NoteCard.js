@@ -1,4 +1,6 @@
 import React from "react";
+import { blue, pink, red, yellow } from "@material-ui/core/colors";
+import { DeleteOutline } from "@material-ui/icons";
 import {
   Avatar,
   Card,
@@ -8,8 +10,6 @@ import {
   Typography,
   makeStyles,
 } from "@material-ui/core";
-import { DeleteOutline } from "@material-ui/icons";
-import { blue, green, pink, yellow } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   test: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
         return yellow[700];
       }
       if (note.category === "money") {
-        return green[500];
+        return red[900];
       }
 
       if (note.category === "todos") {
@@ -49,7 +49,7 @@ const NoteCard = ({ note, handleDelete }) => {
           }
           action={
             <IconButton onClick={() => handleDelete(note.id)}>
-              <DeleteOutline />
+              <DeleteOutline style={{ color: red[500] }}/>
             </IconButton>
           }
           title={note.title}
