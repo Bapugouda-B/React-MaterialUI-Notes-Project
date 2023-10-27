@@ -35,6 +35,12 @@
       "description": "Researching and selection good stocks and buy and hold for several months. Minimum profit target will be 1cr.",
       "category": "work",
       "id": 6
+    },
+    {
+      "title": "Game for 1 hr",
+      "description": "Play game to make money",
+      "category": "money",
+      "id": 7
     }
   ]
 }

@@ -9,6 +9,7 @@ import {
   ListItemIcon,
   AppBar,
   Toolbar,
+  Avatar
 } from "@material-ui/core";
 import { AddCircleOutlineOutlined, SubjectOutlined } from "@material-ui/icons";
 import { useLocation, useNavigate } from "react-router";
@@ -44,6 +45,9 @@ const useStyles = makeStyles((theme) => {
     toolbar: theme.mixins.toolbar,
     date:{
       flexGrow: 1,
+    },
+    avatar: {
+      marginLeft: theme.spacing(2),
     }
   };
 });
@@ -73,6 +77,7 @@ const NotesLayout = ({ children }) => {
         <Toolbar>
           <Typography className={classes.date}>Today is the {format(new Date(), 'do MMMM Y')}</Typography>
           <Typography>Bapu</Typography>
+          <Avatar src="/img.jpg" className={classes.avatar}/>
         </Toolbar>
       </AppBar>
       {/* drawer */}
